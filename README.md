@@ -46,11 +46,11 @@ TODOS :
 
 - Change the way to get datas : Not from Drupal Nodes but from Article's view
 
-[articlesrest]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/articlesrest.png
-[articlesview]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/articlesview.png
-[rest]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/rest.png
-[rest2]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/rest2.png
-[user]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/user.png
+[articlesrest]: https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/articlesrest.png
+[articlesview]: https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/articlesview.png
+[rest]: https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/rest.png
+[rest2]: https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/rest2.png
+[user]: https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/user.png
 
 
 ![Articles rest api][articlesrest]
