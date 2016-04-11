@@ -41,3 +41,24 @@ Add in /etc/hosts :
 ```
 
 Needs to create database with PhpMyAdmin
+
+TODOS :
+
+- Change the way to get datas : Not from Drupal Nodes but from Article's view
+
+[articlesrest]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/articlesrest.png
+[articlesview]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/articlesview.png
+[rest]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/rest.png
+[rest2]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/rest2.png
+[user]: https://github.com/AntoineCharbonnier/angular-drupal/ressources/user.png
+
+
+![Articles rest api][articlesrest]
+
+![Articles Views from drupal][articlesview]
+
+![Rest API][rest]
+
+![Rest API 2][rest2]
+
+![User in Drupal][user]
