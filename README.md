@@ -33,4 +33,11 @@ Create the vhost for the project, like angular-drupal.conf
 </VirtualHost>
 
 ```
+
+Add in /etc/hosts :
+
+```shell
+127.0.0.1 angular-drupal.fr
+```
+
 Needs to create database with PhpMyAdmin
