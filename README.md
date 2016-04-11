@@ -40,7 +40,8 @@ Add in /etc/hosts :
 127.0.0.1 angular-drupal.fr
 ```
 
-Needs to create database with PhpMyAdmin
+Needs to create database with PhpMyAdmin and root user
+[user IN database]:(https://github.com/AntoineCharbonnier/angular-drupal/blob/master/ressources/database.png)
 
 TODOS :
 

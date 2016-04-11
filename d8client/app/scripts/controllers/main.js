@@ -25,5 +25,6 @@ angular.module('d8clientApp')
     console.log('MainCtrl GET response', response);
     var data     = response.data;
     console.log(data);
+    $scope.datas = data;
    });
  }]);

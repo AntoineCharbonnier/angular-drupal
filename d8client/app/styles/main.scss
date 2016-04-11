@@ -50,7 +50,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e6e6e6;
 
   .btn {
     font-size: 21px;
@@ -65,6 +65,75 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+
+/******************************/
+/*         FOOTER             */
+/******************************/
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+/******************************/
+/*         MAIN PAGE          */
+/******************************/
+.main{
+  h1{
+    text-align: center;
+  }
+  .articles{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .article{
+      position: relative;
+    }
+    .title{
+      position: relative;
+      text-align: center;
+    }
+    img{
+      position: relative;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+/******************************/
+/*         NODE PAGE          */
+/******************************/
+.node{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    text-align: center;
+  }
+  .node-content{
+    position: relative;
+    max-width: 720px;
+  }
+}
+
+/******************************/
+/*         SOME RESETS        */
+/******************************/
+a:hover{
+  outline: none;
+  text-decoration: none;
 }
 
 /* Responsive: Portrait tablets and up */

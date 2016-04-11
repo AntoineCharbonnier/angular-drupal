@@ -19,11 +19,11 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(['$routeProvider', '$httpProvider',  function ( $routeProvider, $httpProvider) {
-    // $locationProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
+  .config(['$routeProvider', '$httpProvider', '$locationProvider',   function ( $routeProvider, $httpProvider, $locationProvider) {
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
     $httpProvider.defaults.headers.common.Accept = 'application/hal+json';
 
     $routeProvider
