@@ -6,8 +6,11 @@
       <div class="" ng-click="mainCtrl.increase()">
         INCREASE
       </div>
+      <div class="" ng-click="mainCtrl.decrease()">
+        DECREASE
+      </div>
     </div>
-    <a class="article articles_{{$index}}" ng-repeat="data in datas" ng-if="$index == mainCtrl.showMe">
+    <a class="article articles_{{$index}}" ng-repeat="data in datas" ng-if="$index == mainCtrl.showMe" ><!-- ng-if="$index == mainCtrl.showMe" -->
       <div class="title">
         {{ data.title }}
       </div>
