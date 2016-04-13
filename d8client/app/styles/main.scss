@@ -11,6 +11,13 @@
 }
 
 /******************************/
+/*         BODY               */
+/******************************/
+body{
+  overflow: hidden;
+}
+
+/******************************/
 /*         MAIN PAGE          */
 /******************************/
 .main{
@@ -20,12 +27,12 @@
   .articles{
     position: relative;
     display: inline-block;
-    // flex-direction: column;
     max-height: 100%;
     width: 300%;
-    // overflow-y: hidden;
     margin: 0 auto;
-    height: 500px;
+
+    @include transition(all cubic-bezier(0.83, 0.13, 0.27, 0.93) 2.5s);
+
     .article{
       position: relative;
       margin: 0 50px;
@@ -78,3 +85,21 @@ a:hover{
   outline: none;
   text-decoration: none;
 }
+
+// test with ng-show on the articles
+// .article.ng-hide-add,
+// .article.ng-hide-remove {
+//   -webkit-transition: all linear 2.5s;
+//   -moz-transition: all linear 2.5s;
+//   -o-transition: all linear 2.5s;
+//   transition: all linear 2.5s;
+//   display: block!important;
+// }
+// .article.ng-hide-add.ng-hide-add-active,
+// .article.ng-hide-remove {
+//   opacity: 0;
+// }
+// .article.ng-hide-add,
+// .article.ng-hide-remove.ng-hide-remove-active {
+//   opacity: 1;
+// }

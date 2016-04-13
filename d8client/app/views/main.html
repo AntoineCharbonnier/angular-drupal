@@ -1,20 +1,20 @@
-<div class="main">
+<div class="main" ng-controller="HomeController as mainCtrl">
   <h1>All the artices</h1>
-  <div class="articles" ng-controller="MainCtrl as mainCtrl">
-    <div style="position: relative; ">showMe:{{mainCtrl.showMe}}</div>
-    <div class=" controls">
-      <div class="" ng-click="mainCtrl.increase()">
-        INCREASE
-      </div>
-      <div class="" ng-click="mainCtrl.decrease()">
-        DECREASE
-      </div>
+  <div class="controls" >
+    <div class="" ng-click="mainCtrl.increase()">
+      INCREASE
     </div>
-    <a class="article articles_{{$index}}" ng-repeat="data in datas" ng-if="$index == mainCtrl.showMe" ><!-- ng-if="$index == mainCtrl.showMe" -->
+    <div class="" ng-click="mainCtrl.decrease()">
+      DECREASE
+    </div>
+    <div style="position: relative; ">showMe:{{showMe}}</div>
+  </div>
+  <div class="articles">
+    <a class="article articles_{{$index}}" ng-repeat="data in datas"><!-- ng-show="$index == mainCtrl.showMe" -->
       <div class="title">
         {{ data.title }}
       </div>
-      <img src="{{data.field_image}}" alt="" />
+      <img src="{{data.field_image}}" alt=""/>
     </a>
     <hr>
   </div>

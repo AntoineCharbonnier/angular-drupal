@@ -13,31 +13,34 @@
 angular
   .module('d8clientApp', [
     'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'app.home',
+    'app.about',
+    'app.node'
+    // 'ngCookies',
+    // 'ngResource',
+    // 'ngSanitize',
+    // 'ngTouch'
   ])
-  .config(['$routeProvider', '$httpProvider', '$locationProvider',   function ( $routeProvider, $httpProvider, $locationProvider) {
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+  .config(['$routeProvider','$locationProvider', '$httpProvider',   function ( $routeProvider, $locationProvider, $httpProvider) {
+    // $locationProvider.html5Mode({
+    //   enabled: true,
+    //   requireBase: false
+    // });
     $httpProvider.defaults.headers.common.Accept = 'application/hal+json';
 
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'HomeController'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutController'
       })
       .when('/node/:nid', {
         templateUrl: 'views/node.html',
-        controller: 'NodeCtrl'
+        controller: 'NodeController'
       })
       .otherwise({
         redirectTo: '/'

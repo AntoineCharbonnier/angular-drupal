@@ -13,7 +13,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <base href="/" />
+    <base href="/"/>
   </head>
   <body ng-app="d8clientApp">
     <!--[if lt IE 7]>
@@ -73,9 +73,15 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
-    <script src="scripts/controllers/node.js"></script>
+    <!-- HOME -->
+    <script src="scripts/home/home.module.js"></script>
+    <script src="scripts/home/controllers/home.controller.js"></script>
+    <!-- ABOUT -->
+    <script src="scripts/about/about.module.js"></script>
+    <script src="scripts/about/controllers/about.controller.js"></script>
+    <!-- NODES -->
+    <script src="scripts/node/node.module.js"></script>
+    <script src="scripts/node/controllers/node.controller.js"></script>
     <!-- endbuild -->
 </body>
 </html>
